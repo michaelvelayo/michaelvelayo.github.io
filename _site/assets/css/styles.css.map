@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";",
+		"body{\n\tfont-family: 'Roboto', sans-serif;\n\tfont-family: 'Montserrat', sans-serif;\n}\n\nheader, main, footer {\n\tpadding-left: 150px;\n}\n\n@media only screen and (max-width : 992px) {\n\theader, main, footer {\n\t\tpadding-left: 0;\t\n\t}\n}\n\n.header {\n\tcolor: #0C1C47;\n\tfont-weight: 300;\n}\n#index-banner {\n\tborder-bottom: 1px solid rgba(0,0,0,0.14);\n}\n\n.sidenav {\n  width: 150px;\n}\n.sidenav .user-view {\n  position: static;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,CAAA,EACH,WAAW,EAAE,oBAAoB,EACjC,WAAW,EAAE,wBAAwB,GACrC;;AAED,AAAA,MAAM,EAAE,IAAI,EAAE,MAAM,CAAC,EACpB,YAAY,EAAE,KAAK,GACnB;;AAED,MAAM,mCACL,GAAA,AAAA,MAAM,EAAE,IAAI,EAAE,MAAM,CAAC,EACpB,YAAY,EAAE,CAAC,GACf,EAAA;;AAGF,AAAA,OAAO,CAAC,EACP,KAAK,EAAE,OAAO,EACd,WAAW,EAAE,GAAG,GAChB;;AACD,AAAA,aAAa,CAAC,EACb,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,mBAAgB,GACzC;;AAED,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,KAAK,GACb;;AACD,AAAA,QAAQ,CAAC,UAAU,CAAC,EAClB,QAAQ,EAAE,MAAM,GACjB"
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Scp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jwarby/pygments-css/master/vim.css">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+  </head>
+  <body>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+	<div class="user-view">
+		<div class="background">
+			<img src="/assets/images/background.jpg">
+		</div>
+	</div>
+	<!--<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="/assets/images/background.jpg">
+			</div>
+			<a href="#user"><img class="circle" src="/assets/images/profile.jpg"></a>
+			<a href="#name"><span class="white-text name">Michael Velayo</span></a>
+		    <a href="#email"><span class="white-text email">michaelcentenovelayo@gmail.com</span></a>
+	</div>
+	</li>-->
+	
+		<li><a href="/" class="white-text">About</a></li>
+	
+		<li><a href="/notes" class="white-text">Notes</a></li>
+	
+		<li><a href="/projects" class="white-text">Projects</a></li>
+	
+		<li><a href="/contact" class="white-text">Contact</a></li>
+	
+	<li><a class="white-text" href="https://github.com/michaelvelayo"><i class="fa fa-github white-text" style="font-size: 40px;"></i></a></li>
+	<li><a class="white-text"><i class="fa fa-linkedin-square white-text" style="font-size: 40px;"></i></a></li>
+	<li><a class="white-text"><i class="fa fa-search white-text" style="font-size: 40px;"></i></a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="fa fa-bars blue-text darken-2" style="font-size: 40px; padding-left: 20px;"></i></a>
+
+
+    <main>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 center-on-small-only">
+					<h1 class="header">Scp</h1>
+					<p class="caption">26 Apr 2019 - mike</p>
+					<p>Scp (Secure copy) is a command-line utility that allows you to securely copy files and directories between two locations.</p>
+
+<p>Command syntax:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">scp <span class="o">[</span>OPTION] <span class="o">[</span>user@]SRC_HOST:]file1 <span class="o">[</span>user@]DEST_HOST:]file2</code></pre></figure>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* OPTION - scp options such as cipher, ssh configuration, ssh port, limit, recursive copy …etc.
+* [user@]SRC_HOST:]file1 - Source file.
+* [user@]DEST_HOST:]file2 - Destination file
+</code></pre></div></div>
+
+<p>From Remote to Local</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">scp <span class="nt">-i</span> ~/.ssh/authorized.key <span class="o">[</span>user@]SRC_HOST:]file1 /Users/file2</code></pre></figure>
+
+<p>From Local to Remote</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">scp <span class="nt">-i</span> ~/.ssh/authorized.key /Users/file1 <span class="o">[</span>user@]SRC_HOST:]file2</code></pre></figure>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+  </body>
+</html>

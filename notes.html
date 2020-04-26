@@ -1,0 +1,28 @@
+---
+layout: default
+title: Notes
+---
+<main>
+	<div class="section" id="index-banner">
+		<div class="container">
+			<div class="row" style="margin-bottom: 0;">
+				<div class="col s12 center-on-small-only">
+					<h1 class="header">Latest Notes</h1>
+					<h4 class="light">I document my journey on learning new technology by creating notes.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="section">
+				  {% for post in site.posts %}
+				<div class="col s12  center-on-small-only">
+					<h3 class="header"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					<p class="caption"> {{ post.excerpt }} </p>
+				</div>
+				  {% endfor %}
+			</div>
+		</div>
+	</div>	
+</main>

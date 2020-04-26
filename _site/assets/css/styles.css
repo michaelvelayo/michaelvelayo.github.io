@@ -1,0 +1,15 @@
+body { font-family: 'Roboto', sans-serif; font-family: 'Montserrat', sans-serif; }
+
+header, main, footer { padding-left: 150px; }
+
+@media only screen and (max-width: 992px) { header, main, footer { padding-left: 0; } }
+
+.header { color: #0C1C47; font-weight: 300; }
+
+#index-banner { border-bottom: 1px solid rgba(0, 0, 0, 0.14); }
+
+.sidenav { width: 150px; }
+
+.sidenav .user-view { position: static; }
+
+/*# sourceMappingURL=styles.css.map */

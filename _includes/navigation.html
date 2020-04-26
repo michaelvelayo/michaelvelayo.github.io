@@ -1,0 +1,25 @@
+<ul id="slide-out" class="sidenav sidenav-fixed">
+	<div class="user-view">
+		<div class="background">
+			<img src="/assets/images/background.jpg">
+		</div>
+	</div>
+	<!--<li>
+		<div class="user-view">
+			<div class="background">
+				<img src="/assets/images/background.jpg">
+			</div>
+			<a href="#user"><img class="circle" src="/assets/images/profile.jpg"></a>
+			<a href="#name"><span class="white-text name">Michael Velayo</span></a>
+		    <a href="#email"><span class="white-text email">michaelcentenovelayo@gmail.com</span></a>
+	</div>
+	</li>-->
+	{% for item in site.data.navigation %}
+		<li><a href="{{ item.link }}" class="white-text">{{ item.name }}</a></li>
+	{% endfor %}
+	<li><a class="white-text" href="https://github.com/michaelvelayo"><i class="fa fa-github white-text" style="font-size: 40px;"></i></a></li>
+	<li><a class="white-text"><i class="fa fa-linkedin-square white-text" style="font-size: 40px;"></i></a></li>
+	<li><a class="white-text"><i class="fa fa-search white-text" style="font-size: 40px;"></i></a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="fa fa-bars blue-text darken-2" style="font-size: 40px; padding-left: 20px;"></i></a>
+
